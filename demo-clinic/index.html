@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- À PERSONNALISER : nom du cabinet, ville, description -->
+  <title>Balance Physio — Physiotherapy clinic in Lisbon · Book online</title>
+  <meta name="description" content="Balance Physio helps you move without pain. Sports injuries, back pain, post-surgery rehab and more. Experienced physiotherapists, same-week appointments, book online.">
+  <meta name="theme-color" content="#0B3954">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Balance Physio — Move better, live better">
+  <meta property="og:description" content="Experienced physiotherapists, personalised treatment plans and same-week appointments. Book online in 1 minute.">
+  <meta property="og:url" content="https://lucasguidet.netlify.app/demo-clinic/">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='30' fill='%230B3954'/><path d='M25 55 q25 -35 50 0' stroke='%2350D1C0' stroke-width='10' fill='none' stroke-linecap='round'/><circle cx='50' cy='68' r='8' fill='%2350D1C0'/></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Bandeau démo — à supprimer pour un vrai client -->
+  <div class="demo-banner">
+    <p>Demo website — fictional clinic. <a href="../index.html">← Back to portfolio</a></p>
+  </div>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="logo" aria-label="Balance Physio — back to top">
+        <svg class="logo-icon" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="12" fill="currentColor"/><path d="M10 22 q10 -14 20 0" stroke="#50D1C0" stroke-width="4" fill="none" stroke-linecap="round"/><circle cx="20" cy="27" r="3.5" fill="#50D1C0"/></svg>
+        <span>Balance<strong>Physio</strong></span>
+      </a>
+      <button class="burger" aria-expanded="false" aria-controls="main-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#treatments">Treatments</a></li>
+          <li><a href="#team">Our team</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#info">Contact</a></li>
+          <li><a href="#booking" class="btn btn-primary btn-small">Book an appointment</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="pill reveal"><span aria-hidden="true">✓</span> Appointments available this week</p>
+          <h1 class="reveal">Move without pain.<br><span>Live without limits.</span></h1>
+          <p class="hero-sub reveal">Evidence-based physiotherapy for back pain, sports injuries and post-surgery recovery. One-to-one sessions, a clear plan from day one, and a team that genuinely listens.</p>
+          <div class="hero-ctas reveal">
+            <a href="#booking" class="btn btn-primary">Book an appointment</a>
+            <a href="#treatments" class="btn btn-soft">Explore treatments</a>
+          </div>
+          <ul class="trust reveal" aria-label="Why patients trust us">
+            <li><strong>4.9★</strong><span>310 Google reviews</span></li>
+            <li><strong>12 yrs</strong><span>of clinical experience</span></li>
+            <li><strong>45 min</strong><span>one-to-one sessions</span></li>
+          </ul>
+        </div>
+
+        <!-- PHOTO : remplacer l'illustration par une photo de séance (Unsplash : "physiotherapy session") -->
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="blob blob-1"></div>
+          <div class="blob blob-2"></div>
+          <svg class="hero-illu" viewBox="0 0 400 420">
+            <circle cx="200" cy="210" r="160" fill="#E6F6F3"/>
+            <!-- silhouette en mouvement -->
+            <circle cx="218" cy="98" r="26" fill="#0B3954"/>
+            <path d="M210 128 L185 220 L150 300" stroke="#0B3954" stroke-width="26" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            <path d="M185 220 L240 270 L250 330" stroke="#0B3954" stroke-width="26" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            <path d="M205 150 L150 175 M205 150 L270 140 L300 105" stroke="#1F9E8F" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            <!-- arc de mouvement -->
+            <path d="M90 240 A120 120 0 0 1 150 110" stroke="#50D1C0" stroke-width="4" stroke-dasharray="2 12" stroke-linecap="round" fill="none"/>
+            <path d="M310 250 A120 120 0 0 1 330 170" stroke="#50D1C0" stroke-width="4" stroke-dasharray="2 12" stroke-linecap="round" fill="none"/>
+          </svg>
+          <div class="float-card fc-1">
+            <span class="fc-icon">📅</span>
+            <div><strong>Next available</strong><span id="next-slot">Tomorrow, 9:30</span></div>
+          </div>
+          <div class="float-card fc-2">
+            <span class="fc-icon">💚</span>
+            <div><strong>92% of patients</strong><span>feel better in 4 sessions</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TREATMENTS ============ -->
+    <section class="section" id="treatments" aria-labelledby="treatments-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="kicker">Treatments</p>
+          <h2 id="treatments-title">Care tailored to your body and your goals</h2>
+          <p>Every treatment starts with a thorough assessment. Then we build a plan that fits your life — not the other way around.</p>
+        </div>
+
+        <!-- À PERSONNALISER : liste des soins -->
+        <ul class="treatments-grid">
+          <li class="treatment reveal">
+            <span class="t-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M9 6h6M8.5 10h7M9 14h6M9.5 18h5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/></svg></span>
+            <h3>Back &amp; neck pain</h3>
+            <p>Manual therapy and targeted exercises to relieve pain and stop it from coming back.</p>
+          </li>
+          <li class="treatment reveal">
+            <span class="t-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="15" cy="4.5" r="2" fill="currentColor"/><path d="M13 8l-3 5 4 3-1 5M10 13l-5 1M14 8l4 3 3-1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg></span>
+            <h3>Sports injuries</h3>
+            <p>From sprains to tendon issues — get back to training safely, and stronger than before.</p>
+          </li>
+          <li class="treatment reveal">
+            <span class="t-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3v6a5 5 0 0 0 10 0V3M12 14v7M8 21h8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/><path d="M4 12h3M17 12h3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+            <h3>Post-surgery rehab</h3>
+            <p>Structured recovery after knee, hip or shoulder surgery, in close contact with your surgeon.</p>
+          </li>
+          <li class="treatment reveal">
+            <span class="t-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h4l2-5 4 10 2-5h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg></span>
+            <h3>Dry needling</h3>
+            <p>A precise technique to release muscle trigger points and ease chronic tension.</p>
+          </li>
+          <li class="treatment reveal">
+            <span class="t-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="6" r="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 9v5m0 0l-3 7m3-7l3 7M7 11.5c2 .8 8 .8 10 0" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/></svg></span>
+            <h3>Pregnancy &amp; postnatal care</h3>
+            <p>Gentle, specialised support for pelvic pain, posture and pelvic floor recovery.</p>
+          </li>
+          <li class="treatment reveal">
+            <span class="t-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/></svg></span>
+            <h3>Clinical Pilates</h3>
+            <p>Small-group classes (max. 4) to build core strength, mobility and confidence.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ TEAM ============ -->
+    <section class="section section-tint" id="team" aria-labelledby="team-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="kicker">Meet the team</p>
+          <h2 id="team-title">Friendly experts, in your corner</h2>
+        </div>
+        <!-- À PERSONNALISER : équipe. PHOTO : remplacer les avatars à initiales par des portraits -->
+        <ul class="team-grid">
+          <li class="member reveal">
+            <div class="avatar av-1" aria-hidden="true">IR</div>
+            <h3>Inês Rocha</h3>
+            <p class="role">Founder · Sports physiotherapist</p>
+            <p>Former physio for a national rowing team. Inês loves helping runners and weekend warriors get back out there.</p>
+          </li>
+          <li class="member reveal">
+            <div class="avatar av-2" aria-hidden="true">DM</div>
+            <h3>Daniel Moreau</h3>
+            <p class="role">Musculoskeletal &amp; spine specialist</p>
+            <p>Twelve years treating back and neck pain, with a calm, hands-on approach and clear home programmes.</p>
+          </li>
+          <li class="member reveal">
+            <div class="avatar av-3" aria-hidden="true">SA</div>
+            <h3>Sara Almeida</h3>
+            <p class="role">Women's health physiotherapist</p>
+            <p>Specialist in pregnancy, postnatal and pelvic health care. Also leads our Clinical Pilates classes.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ JOURNEY ============ -->
+    <section class="section" id="journey" aria-labelledby="journey-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="kicker">Your journey</p>
+          <h2 id="journey-title">Three steps to feeling like yourself again</h2>
+        </div>
+        <ol class="journey">
+          <li class="j-step reveal">
+            <span class="j-num">01</span>
+            <h3>Assessment</h3>
+            <p>We listen to your story, test your movement and find the real cause of your pain — not just the symptoms.</p>
+          </li>
+          <li class="j-step reveal">
+            <span class="j-num">02</span>
+            <h3>Personal treatment plan</h3>
+            <p>Hands-on care plus simple exercises you can do at home. You'll always know why we do what we do.</p>
+          </li>
+          <li class="j-step reveal">
+            <span class="j-num">03</span>
+            <h3>Recovery &amp; prevention</h3>
+            <p>We track your progress and give you the tools to stay pain-free long after your last session.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ PRICING ============ -->
+    <section class="section section-navy" id="pricing" aria-labelledby="pricing-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="kicker">Pricing &amp; insurance</p>
+          <h2 id="pricing-title">Transparent prices, no surprises</h2>
+        </div>
+        <!-- À PERSONNALISER : tarifs -->
+        <div class="pricing-grid">
+          <div class="price-card reveal">
+            <h3>First assessment</h3>
+            <p class="price">€55</p>
+            <p class="duration">60 minutes</p>
+            <p>Full assessment, first treatment and a written plan to take home.</p>
+          </div>
+          <div class="price-card price-card-hl reveal">
+            <h3>Follow-up session</h3>
+            <p class="price">€45</p>
+            <p class="duration">45 minutes</p>
+            <p>One-to-one treatment with your physiotherapist and updated exercises.</p>
+          </div>
+          <div class="price-card reveal">
+            <h3>Pack of 5 sessions</h3>
+            <p class="price">€200</p>
+            <p class="duration">Save €25</p>
+            <p>Ideal for ongoing rehab. Valid for 3 months, shareable within the family.</p>
+          </div>
+        </div>
+        <div class="insurance reveal">
+          <span class="ins-icon" aria-hidden="true">🛡️</span>
+          <p><strong>Insurance:</strong> we work with most major health insurers (Médis, Multicare, AdvanceCare, Allianz). We'll give you an itemised invoice for reimbursement, and with some insurers we can bill directly. Ask us when you book.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="container faq-wrap">
+        <div class="section-head reveal">
+          <p class="kicker">FAQ</p>
+          <h2 id="faq-title">Good questions</h2>
+        </div>
+        <div class="faq reveal">
+          <details>
+            <summary>Do I need a doctor's referral?</summary>
+            <p>No. You can book directly with us. If you'd like to claim from your insurer, check whether they require a prescription — many don't.</p>
+          </details>
+          <details>
+            <summary>What should I wear to my appointment?</summary>
+            <p>Comfortable clothes you can move in, like shorts or leggings and a T-shirt. We may need to see the area being treated, and we'll always ask for your consent first.</p>
+          </details>
+          <details>
+            <summary>How many sessions will I need?</summary>
+            <p>It depends on your condition, but most patients notice a clear improvement within 3 to 5 sessions. We'll give you an honest estimate after your first assessment.</p>
+          </details>
+          <details>
+            <summary>What if I need to cancel?</summary>
+            <p>No problem — just let us know at least 24 hours in advance by phone, email or the link in your confirmation email. Late cancellations may be charged.</p>
+          </details>
+          <details>
+            <summary>Is the clinic accessible?</summary>
+            <p>Yes. We're on the ground floor with step-free access, an accessible restroom and height-adjustable treatment tables.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BOOKING ============ -->
+    <section class="section section-tint" id="booking" aria-labelledby="booking-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="kicker">Book online</p>
+          <h2 id="booking-title">Book an appointment</h2>
+          <p>Pick a day and a time that suits you. You'll receive a confirmation email within the hour.</p>
+        </div>
+
+        <!--
+          FORMULAIRE — front-end uniquement. Les créneaux sont fictifs (générés dans script.js).
+          Formspree : action="https://formspree.io/f/VOTRE_ID" method="POST"
+          Netlify Forms : name="booking" data-netlify="true"
+          Pour un vrai cabinet : brancher un outil de prise de RDV (Calendly, Doctolib…) à la place du sélecteur.
+        -->
+        <form class="booking reveal" id="booking-form" novalidate>
+          <div class="booking-step">
+            <h3 class="step-title"><span>1</span> Choose a day and time</h3>
+
+            <fieldset class="picker">
+              <legend class="picker-legend">Day</legend>
+              <div class="days-nav">
+                <button type="button" class="days-arrow" id="days-prev" aria-label="Previous days">‹</button>
+                <div class="days" id="days"></div>
+                <button type="button" class="days-arrow" id="days-next" aria-label="Next days">›</button>
+              </div>
+            </fieldset>
+
+            <fieldset class="picker">
+              <legend class="picker-legend">Available times <span id="slots-day-label"></span></legend>
+              <div class="slots" id="slots"></div>
+              <p class="field-error" id="slot-error"></p>
+            </fieldset>
+
+            <p class="selection" id="selection" aria-live="polite">No time selected yet.</p>
+          </div>
+
+          <div class="booking-step">
+            <h3 class="step-title"><span>2</span> Your details</h3>
+            <div class="fields">
+              <div class="field">
+                <label for="b-treatment">Reason for your visit</label>
+                <select id="b-treatment" name="treatment">
+                  <option>First assessment (60 min)</option>
+                  <option>Follow-up session (45 min)</option>
+                  <option>Sports injury</option>
+                  <option>Post-surgery rehab</option>
+                  <option>Pregnancy &amp; postnatal care</option>
+                  <option>Clinical Pilates</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="b-name">Full name</label>
+                <input type="text" id="b-name" name="name" autocomplete="name" required aria-describedby="b-name-error">
+                <p class="field-error" id="b-name-error"></p>
+              </div>
+              <div class="field">
+                <label for="b-email">Email</label>
+                <input type="email" id="b-email" name="email" autocomplete="email" required aria-describedby="b-email-error">
+                <p class="field-error" id="b-email-error"></p>
+              </div>
+              <div class="field">
+                <label for="b-phone">Phone</label>
+                <input type="tel" id="b-phone" name="phone" autocomplete="tel" required aria-describedby="b-phone-error">
+                <p class="field-error" id="b-phone-error"></p>
+              </div>
+              <div class="field field-full">
+                <label for="b-notes">Anything we should know? <span class="optional">(optional)</span></label>
+                <textarea id="b-notes" name="notes" rows="3" placeholder="e.g. knee pain when running for 3 weeks"></textarea>
+              </div>
+              <div class="field field-full check">
+                <input type="checkbox" id="b-consent" name="consent" required aria-describedby="b-consent-error">
+                <label for="b-consent">I agree that Balance Physio may use my details to manage my appointment.</label>
+                <p class="field-error" id="b-consent-error"></p>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Confirm my appointment</button>
+          </div>
+
+          <div class="form-success" role="status" aria-live="polite" hidden></div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ============ PRACTICAL INFO ============ -->
+    <section class="section" id="info" aria-labelledby="info-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="kicker">Practical information</p>
+          <h2 id="info-title">Easy to find, easy to reach</h2>
+        </div>
+        <!-- À PERSONNALISER : coordonnées -->
+        <div class="info-grid">
+          <div class="info-card reveal">
+            <span class="info-icon" aria-hidden="true">📍</span>
+            <h3>Address</h3>
+            <address>Rua das Flores 48, Ground floor<br>1200-195 Lisbon, Portugal</address>
+            <a href="https://maps.google.com/?q=Lisbon" target="_blank" rel="noopener">Open in Maps ↗</a>
+          </div>
+          <div class="info-card reveal">
+            <span class="info-icon" aria-hidden="true">🕘</span>
+            <h3>Opening hours</h3>
+            <p>Mon–Fri: 8:00–20:00<br>Saturday: 9:00–13:00<br>Sunday: closed</p>
+          </div>
+          <div class="info-card reveal">
+            <span class="info-icon" aria-hidden="true">☎️</span>
+            <h3>Contact</h3>
+            <p><a href="tel:+351210000000">+351 21 000 0000</a><br><a href="mailto:hello@balancephysio-demo.com">hello@balancephysio-demo.com</a></p>
+          </div>
+          <div class="info-card reveal">
+            <span class="info-icon" aria-hidden="true">🚇</span>
+            <h3>Getting here</h3>
+            <p>Metro: Baixa-Chiado (5 min walk)<br>Tram 28 stop: Calhariz<br>Paid parking: Camões, 200 m</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-brand">Balance<strong>Physio</strong></p>
+      <p>Registered physiotherapy clinic · Licence no. [XXXXXX]</p>
+      <p>© <span class="year">2026</span> Balance Physio · <a href="#top">Back to top ↑</a> · Website by <a href="../index.html">Lucas Guidet</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

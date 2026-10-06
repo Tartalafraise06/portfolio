@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- À PERSONNALISER : nom de l'artisan, ville, description -->
+  <title>Atelier Lumière — Bespoke furniture, handmade in Lyon</title>
+  <meta name="description" content="Atelier Lumière designs and builds bespoke solid-wood furniture and kitchens in Lyon. Tables, seating, storage and kitchens made to measure, to last for generations. Request a quote.">
+  <meta name="theme-color" content="#141414">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Atelier Lumière — Furniture made to outlive us">
+  <meta property="og:description" content="Bespoke solid-wood furniture and kitchens, designed and handmade in Lyon. Request a free quote.">
+  <meta property="og:url" content="https://lucasguidet.netlify.app/demo-craftsman/">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23141414'/><text x='50' y='72' font-size='66' text-anchor='middle' fill='%23FF5B1F' font-family='Georgia'>L</text></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;1,9..144,300;1,9..144,500&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Motifs "bois" SVG réutilisés par toutes les illustrations (remplaçables par de vraies photos) -->
+  <svg class="defs" aria-hidden="true" focusable="false">
+    <defs>
+      <pattern id="oak" width="80" height="14" patternUnits="userSpaceOnUse">
+        <rect width="80" height="14" fill="#C9995F"/>
+        <path d="M0 4 Q20 1 40 4 T80 4" stroke="#A97A45" stroke-width="1.2" fill="none" opacity=".7"/>
+        <path d="M0 10 Q20 13 40 10 T80 10" stroke="#B58652" stroke-width=".8" fill="none"/>
+      </pattern>
+      <pattern id="walnut" width="90" height="12" patternUnits="userSpaceOnUse">
+        <rect width="90" height="12" fill="#6B4630"/>
+        <path d="M0 3 Q22 6 45 3 T90 3" stroke="#53331F" stroke-width="1.4" fill="none"/>
+        <path d="M0 9 Q22 7 45 9 T90 9" stroke="#7A5239" stroke-width=".9" fill="none"/>
+      </pattern>
+      <pattern id="ash" width="70" height="10" patternUnits="userSpaceOnUse">
+        <rect width="70" height="10" fill="#E2CDAA"/>
+        <path d="M0 3 Q18 1 35 3 T70 3" stroke="#CDB28A" stroke-width="1" fill="none"/>
+        <path d="M0 8 Q18 10 35 8 T70 8" stroke="#D6BE98" stroke-width=".7" fill="none"/>
+      </pattern>
+      <pattern id="cherry" width="80" height="12" patternUnits="userSpaceOnUse">
+        <rect width="80" height="12" fill="#9C5A3C"/>
+        <path d="M0 4 Q20 7 40 4 T80 4" stroke="#7F4329" stroke-width="1.1" fill="none"/>
+        <path d="M0 9 Q20 8 40 9 T80 9" stroke="#AE6B4B" stroke-width=".8" fill="none"/>
+      </pattern>
+      <pattern id="ebony" width="80" height="12" patternUnits="userSpaceOnUse">
+        <rect width="80" height="12" fill="#2A2420"/>
+        <path d="M0 5 Q20 3 40 5 T80 5" stroke="#3A322C" stroke-width="1.2" fill="none"/>
+      </pattern>
+    </defs>
+  </svg>
+
+  <!-- Bandeau démo — à supprimer pour un vrai client -->
+  <div class="demo-banner">
+    <p>Demo website — fictional workshop. <a href="../index.html">← Back to portfolio</a></p>
+  </div>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="logo" aria-label="Atelier Lumière — back to top">Atelier <em>Lumière</em></a>
+      <button class="burger" aria-expanded="false" aria-controls="main-nav">
+        <span class="burger-label">Menu</span>
+        <span class="burger-lines" aria-hidden="true"><span></span><span></span></span>
+      </button>
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#work"><span>01</span>Work</a></li>
+          <li><a href="#process"><span>02</span>Process</a></li>
+          <li><a href="#words"><span>03</span>Clients</a></li>
+          <li><a href="#quote"><span>04</span>Request a quote</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO (plein écran) ============ -->
+    <!-- PHOTO : possibilité d'ajouter une photo d'atelier en fond (.hero) — Unsplash : "woodworking workshop" -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <p class="hero-meta reveal"><span>Bespoke furniture</span><span>Lyon, France</span><span>Since 2011</span></p>
+        <h1 class="hero-title reveal">Furniture made<br>to <em>outlive</em> us.</h1>
+        <div class="hero-bottom reveal">
+          <p class="hero-sub">We design and handcraft solid-wood tables, seating, storage and kitchens — one piece at a time, for people who want to keep things for good.</p>
+          <div class="hero-ctas">
+            <a href="#quote" class="btn btn-accent">Request a quote <span aria-hidden="true">→</span></a>
+            <a href="#work" class="link-arrow">See our work</a>
+          </div>
+        </div>
+      </div>
+      <!-- Badge rotatif décoratif -->
+      <div class="spin-badge" aria-hidden="true">
+        <svg viewBox="0 0 120 120">
+          <defs><path id="circle" d="M60 60 m-46 0 a46 46 0 1 1 92 0 a46 46 0 1 1 -92 0"/></defs>
+          <text><textPath href="#circle">Handmade in Lyon · Solid wood · Made to last ·</textPath></text>
+        </svg>
+        <span>✦</span>
+      </div>
+    </section>
+
+    <!-- Bandeau défilant -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Solid oak</span><span>✦</span><span>Walnut</span><span>✦</span><span>Ash</span><span>✦</span><span>Cherry</span><span>✦</span><span>Hand-finished</span><span>✦</span><span>Made to measure</span><span>✦</span>
+        <span>Solid oak</span><span>✦</span><span>Walnut</span><span>✦</span><span>Ash</span><span>✦</span><span>Cherry</span><span>✦</span><span>Hand-finished</span><span>✦</span><span>Made to measure</span><span>✦</span>
+      </div>
+    </div>
+
+    <!-- ============ GALLERY ============ -->
+    <section class="section" id="work" aria-labelledby="work-title">
+      <div class="container">
+        <div class="section-top">
+          <h2 id="work-title" class="reveal">Selected <em>work</em></h2>
+          <p class="reveal">Every piece is designed with its owner and built by hand in our workshop. Select a project to see it larger.</p>
+        </div>
+
+        <div class="filters reveal" role="group" aria-label="Filter projects by category">
+          <button class="filter is-active" data-filter="all" aria-pressed="true">All <sup>12</sup></button>
+          <button class="filter" data-filter="tables" aria-pressed="false">Tables <sup>3</sup></button>
+          <button class="filter" data-filter="seating" aria-pressed="false">Seating <sup>4</sup></button>
+          <button class="filter" data-filter="storage" aria-pressed="false">Storage <sup>3</sup></button>
+          <button class="filter" data-filter="kitchens" aria-pressed="false">Kitchens <sup>2</sup></button>
+        </div>
+        <p class="sr-only" id="filter-status" aria-live="polite"></p>
+
+        <!-- À PERSONNALISER : projets. PHOTO : remplacer chaque <svg> par <img src="..." alt="..."> -->
+        <ul class="gallery">
+          <li class="work tall" data-category="tables">
+            <button class="work-btn" data-title="The Saône dining table" data-meta="Tables · Solid oak · 240 × 100 cm" data-desc="A ten-seater for a family home on the river, with a single-plank top and hand-cut bridle joints.">
+              <span class="work-art bg-sand">
+                <svg viewBox="0 0 200 260" role="img" aria-label="Long solid oak dining table"><rect x="20" y="120" width="160" height="14" fill="url(#oak)"/><rect x="34" y="134" width="10" height="90" fill="url(#oak)"/><rect x="156" y="134" width="10" height="90" fill="url(#oak)"/><rect x="44" y="150" width="112" height="6" fill="url(#oak)"/><ellipse cx="100" cy="228" rx="86" ry="4" fill="#000" opacity=".08"/></svg>
+              </span>
+              <span class="work-info"><span class="work-cat">Tables</span><span class="work-title">The Saône dining table</span></span>
+            </button>
+          </li>
+          <li class="work" data-category="seating">
+            <button class="work-btn" data-title="Lounge chair No. 4" data-meta="Seating · Walnut &amp; wool · Edition of 20" data-desc="Our most-loved chair: a steam-bent walnut frame and a deep seat upholstered in undyed wool.">
+              <span class="work-art bg-rust">
+                <svg viewBox="0 0 200 200" role="img" aria-label="Walnut lounge chair with a cream cushion"><path d="M50 60 q-6 50 10 90 h80 l10 -40 z" fill="url(#walnut)"/><rect x="60" y="110" width="90" height="22" rx="6" fill="#EFE6D6"/><path d="M56 150 l-10 30 M140 150 l12 30" stroke="#53331F" stroke-width="6" stroke-linecap="round"/></svg>
+              </span>
+              <span class="work-info"><span class="work-cat">Seating</span><span class="work-title">Lounge chair No. 4</span></span>
+            </button>
+          </li>
+          <li class="work tall" data-category="storage">
+            <button class="work-btn" data-title="Library wall, Croix-Rousse" data-meta="Storage · Ash · 3.2 m high" data-desc="Floor-to-ceiling shelving for a book collector, with a rolling ladder and hidden cable runs.">
+              <span class="work-art bg-stone">
+                <svg viewBox="0 0 200 260" role="img" aria-label="Tall ash bookshelf with books"><rect x="40" y="20" width="120" height="220" fill="url(#ash)"/><g fill="#F3EEE6"><rect x="48" y="28" width="104" height="44"/><rect x="48" y="80" width="104" height="44"/><rect x="48" y="132" width="104" height="44"/><rect x="48" y="184" width="104" height="48"/></g><g fill="#2A2420"><rect x="54" y="40" width="8" height="32"/><rect x="64" y="44" width="6" height="28"/><rect x="110" y="92" width="10" height="32"/><rect x="122" y="96" width="6" height="28"/><rect x="58" y="146" width="12" height="30"/></g><g fill="#FF5B1F"><rect x="72" y="36" width="8" height="36"/><rect x="130" y="150" width="8" height="26"/></g><circle cx="100" cy="214" r="10" fill="#C9995F"/></svg>
+              </span>
+              <span class="work-info"><span class="work-cat">Storage</span><span class="work-title">Library wall, Croix-Rousse</span></span>
+            </button>
+          </li>
+          <li class="work" data-category="kitchens">
+            <button class="work-btn" data-title="Kitchen in a former silk mill" data-meta="Kitchens · Oak &amp; black steel" data-desc="A 4-metre island in oiled oak with a blackened-steel worktop, designed around a cook who loves to host.">
+              <span class="work-art bg-ink">
+                <svg viewBox="0 0 200 200" role="img" aria-label="Oak kitchen island with a black worktop"><rect x="20" y="96" width="160" height="10" fill="#0B0B0B"/><rect x="26" y="106" width="148" height="66" fill="url(#oak)"/><g stroke="#8A6236" stroke-width="2"><line x1="75" y1="110" x2="75" y2="168"/><line x1="125" y1="110" x2="125" y2="168"/></g><g fill="#2A2420"><rect x="46" y="120" width="12" height="3"/><rect x="94" y="120" width="12" height="3"/><rect x="144" y="120" width="12" height="3"/></g><path d="M70 40 v40 M130 40 v40" stroke="#555" stroke-width="2"/><path d="M60 80 h20 l-4 -8 h-12z M120 80 h20 l-4 -8 h-12z" fill="#FF5B1F"/></svg>
+              </span>
+              <span class="work-info"><span class="work-cat">Kitchens</span><span class="work-title">Kitchen in a former silk mill</span></span>
+            </button>
+          </li>
+          <li class="work" data-category="seating">
+            <button class="work-btn" data-title="Workshop stool" data-meta="Seating · Cherry · Set of 3" data-desc="A three-legged stool with a carved seat, made for a bar counter and comfortable for hours.">
+              <span class="work-art bg-sage">
+                <svg viewBox="0 0 200 200" role="img" aria-label="Cherry wood bar stool"><ellipse cx="100" cy="52" rx="44" ry="12" fill="url(#cherry)"/><path d="M76 60 L58 178 M124 60 L142 178 M100 64 L100 178" stroke="#7F4329" stroke-width="8" stroke-linecap="round"/><path d="M68 130 h64" stroke="#7F4329" stroke-width="5"/></svg>
+              </span>
+              <span class="work-info"><span class="work-cat">Seating</span><span class="work-title">Workshop stool</span></span>
+            </button>
+          </li>
+          <li class="work wide" data-category="storage">
+            <button class="work-btn" data-title="The Fourvière sideboard" data-meta="Storage · Walnut · 210 cm" data-desc="Fluted sliding doors, dovetailed drawers and solid brass pulls. Built to hold a lifetime of records.">
+              <span class="work-art bg-sand">
+                <svg viewBox="0 0 300 180" role="img" aria-label="Low walnut sideboard with fluted doors"><rect x="30" y="56" width="240" height="80" fill="url(#walnut)"/><g stroke="#3F2616" stroke-width="1.5" opacity=".7"><line x1="110" y1="60" x2="110" y2="132"/><line x1="190" y1="60" x2="190" y2="132"/></g><g stroke="#53331F" stroke-width="1" opacity=".55"><line x1="120" y1="62" x2="120" y2="130"/><line x1="130" y1="62" x2="130" y2="130"/><line x1="140" y1="62" x2="140" y2="130"/><line x1="150" y1="62" x2="150" y2="130"/><line x1="160" y1="62" x2="160" y2="130"/><line x1="170" y1="62" x2="170" y2="130"/><line x1="180" y1="62" x2="180" y2="130"/></g><g fill="#D4A94A"><rect x="64" y="92" width="12" height="3"/><rect x="226" y="92" width="12" height="3"/></g><path d="M48 136 v20 M252 136 v20" stroke="#3F2616" stroke-width="5"/></svg>
+              </span>
+              <span class="work-info"><span class="work-cat">Storage</span><span class="work-title">The Fourvière sideboard</span></span>
+            </button>
+          </li>
+          <li class="work" data-category="tables">
+            <button class="work-btn" data-title="Round coffee table" data-meta="Tables · Smoked oak · Ø 90 cm" data-desc="A low pedestal table with a turned base, finished in a deep smoked oil.">
+              <span class="work-art bg-rust">
+                <svg viewBox="0 0 200 200" role="img" aria-label="Round dark oak coffee table"><ellipse cx="100" cy="96" rx="76" ry="20" fill="url(#ebony)"/><rect x="24" y="96" width="152" height="8" fill="#1E1A17"/><path d="M84 104 h32 l-6 60 h-20z" fill="url(#ebony)"/><ellipse cx="100" cy="168" rx="30" ry="6" fill="#1E1A17"/></svg>
+              </span>
+              <span class="work-info"><span class="work-cat">Tables</span><span class="work-title">Round coffee table</span></span>
+            </button>
+          </li>
+          <li class="work tall" data-category="seating">
+            <button class="work-btn" data-title="Dining chair “Marthe”" data-meta="Seating · Ash · Set of 8" data-desc="A light, stackable chair with a woven paper-cord seat. Designed to pair with the Saône table.">
+              <span class="work-art bg-stone">
+                <svg viewBox="0 0 200 260" role="img" aria-label="Light ash dining chair with woven seat"><path d="M66 30 v190 M134 30 v190" stroke="url(#ash)" stroke-width="10" stroke-linecap="round"/><path d="M66 40 h68 M66 70 h68" stroke="#CDB28A" stroke-width="8"/><rect x="60" y="130" width="80" height="14" fill="#D9C9A3"/><path d="M62 132 l76 10 M62 142 l76 -10" stroke="#BCA77A" stroke-width="1.5"/><path d="M60 144 L50 230 M140 144 L150 230" stroke="#CDB28A" stroke-width="9" stroke-linecap="round"/></svg>
+              </span>
+              <span class="work-info"><span class="work-cat">Seating</span><span class="work-title">Dining chair “Marthe”</span></span>
+            </button>
+          </li>
+          <li class="work" data-category="tables">
+            <button class="work-btn" data-title="Writing desk" data-meta="Tables · Cherry · 140 × 65 cm" data-desc="A compact desk with a tapered frame and a hidden drawer for a home office that doesn't look like one.">
+              <span class="work-art bg-ink">
+                <svg viewBox="0 0 200 200" role="img" aria-label="Cherry writing desk with a drawer"><rect x="26" y="78" width="148" height="10" fill="url(#cherry)"/><rect x="60" y="88" width="80" height="18" fill="url(#cherry)"/><rect x="92" y="95" width="16" height="3" fill="#D4A94A"/><path d="M36 88 L44 170 M164 88 L156 170" stroke="#7F4329" stroke-width="7" stroke-linecap="round"/><rect x="128" y="58" width="22" height="20" fill="#FF5B1F"/><path d="M60 78 l18 -22 M70 78 l6 -18" stroke="#EFE6D6" stroke-width="2"/></svg>
+              </span>
+              <span class="work-info"><span class="work-cat">Tables</span><span class="work-title">Writing desk</span></span>
+            </button>
+          </li>
+          <li class="work" data-category="seating">
+            <button class="work-btn" data-title="Entrance bench" data-meta="Seating · Oak · 160 cm" data-desc="A slatted bench with shoe storage below, built to fit an awkward hallway down to the millimetre.">
+              <span class="work-art bg-sage">
+                <svg viewBox="0 0 200 200" role="img" aria-label="Slatted oak bench"><g fill="url(#oak)"><rect x="20" y="88" width="160" height="8"/><rect x="20" y="99" width="160" height="8"/></g><rect x="30" y="107" width="10" height="64" fill="url(#oak)"/><rect x="160" y="107" width="10" height="64" fill="url(#oak)"/><rect x="40" y="148" width="120" height="6" fill="url(#oak)"/><g fill="#2A2420"><rect x="56" y="136" width="22" height="12" rx="4"/><rect x="118" y="136" width="22" height="12" rx="4"/></g></svg>
+              </span>
+              <span class="work-info"><span class="work-cat">Seating</span><span class="work-title">Entrance bench</span></span>
+            </button>
+          </li>
+          <li class="work tall" data-category="storage">
+            <button class="work-btn" data-title="Bedroom wardrobe" data-meta="Storage · Oak &amp; linen · 2.4 m high" data-desc="Built-in wardrobe with linen-lined doors and cedar drawers that keep moths away naturally.">
+              <span class="work-art bg-rust">
+                <svg viewBox="0 0 200 260" role="img" aria-label="Tall oak wardrobe with two doors"><rect x="44" y="20" width="112" height="216" fill="url(#oak)"/><line x1="100" y1="24" x2="100" y2="190" stroke="#8A6236" stroke-width="2"/><rect x="50" y="194" width="100" height="36" fill="url(#oak)" stroke="#8A6236" stroke-width="1.5"/><g fill="#2A2420"><rect x="92" y="100" width="3" height="22"/><rect x="105" y="100" width="3" height="22"/><rect x="92" y="210" width="16" height="3"/></g></svg>
+              </span>
+              <span class="work-info"><span class="work-cat">Storage</span><span class="work-title">Bedroom wardrobe</span></span>
+            </button>
+          </li>
+          <li class="work wide" data-category="kitchens">
+            <button class="work-btn" data-title="Galley kitchen, Presqu'île" data-meta="Kitchens · Ash &amp; terrazzo" data-desc="Every centimetre counts in this 7 m² apartment kitchen: full-height ash cabinetry and a terrazzo worktop.">
+              <span class="work-art bg-stone">
+                <svg viewBox="0 0 300 180" role="img" aria-label="Galley kitchen with ash cabinets"><rect x="30" y="24" width="240" height="44" fill="url(#ash)"/><g stroke="#BFA37A" stroke-width="1.5"><line x1="90" y1="26" x2="90" y2="66"/><line x1="150" y1="26" x2="150" y2="66"/><line x1="210" y1="26" x2="210" y2="66"/></g><rect x="30" y="96" width="240" height="8" fill="#E9E4DC"/><g fill="#B9B2A6"><circle cx="60" cy="100" r="1.5"/><circle cx="120" cy="99" r="1.5"/><circle cx="200" cy="101" r="1.5"/></g><rect x="30" y="104" width="240" height="56" fill="url(#ash)"/><g stroke="#BFA37A" stroke-width="1.5"><line x1="90" y1="106" x2="90" y2="158"/><line x1="150" y1="106" x2="150" y2="158"/><line x1="210" y1="106" x2="210" y2="158"/></g><rect x="160" y="80" width="30" height="16" fill="#FF5B1F"/></svg>
+              </span>
+              <span class="work-info"><span class="work-cat">Kitchens</span><span class="work-title">Galley kitchen, Presqu'île</span></span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ PROCESS ============ -->
+    <section class="section section-dark" id="process" aria-labelledby="process-title">
+      <div class="container">
+        <div class="section-top">
+          <h2 id="process-title" class="reveal">How we <em>work</em></h2>
+          <p class="reveal">No catalogue, no shortcuts. Just a clear process, and you're involved at every step.</p>
+        </div>
+        <ol class="process">
+          <li class="reveal">
+            <span class="p-num">01</span>
+            <div>
+              <h3>Conversation</h3>
+              <p>We meet at your home or in the workshop to understand how you live, what you need and what you love.</p>
+            </div>
+            <span class="p-time">Week 1</span>
+          </li>
+          <li class="reveal">
+            <span class="p-num">02</span>
+            <div>
+              <h3>Design &amp; drawings</h3>
+              <p>Sketches, then detailed drawings and wood samples. You approve every dimension and finish before we cut.</p>
+            </div>
+            <span class="p-time">Weeks 2–3</span>
+          </li>
+          <li class="reveal">
+            <span class="p-num">03</span>
+            <div>
+              <h3>Making</h3>
+              <p>Your piece is built by hand in our Lyon workshop, using sustainably sourced French hardwoods and traditional joinery.</p>
+            </div>
+            <span class="p-time">Weeks 4–10</span>
+          </li>
+          <li class="reveal">
+            <span class="p-num">04</span>
+            <div>
+              <h3>Delivery &amp; installation</h3>
+              <p>We deliver and install it ourselves, then explain how to care for it so it ages beautifully.</p>
+            </div>
+            <span class="p-time">Lifetime care</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="section" id="words" aria-labelledby="words-title">
+      <div class="container">
+        <h2 id="words-title" class="sr-only">What our clients say</h2>
+        <!-- À PERSONNALISER : témoignages -->
+        <figure class="big-quote reveal">
+          <blockquote>
+            <p>“Our table is the heart of the house now. Three years in, it's only getting more beautiful — and our kids already argue about who will inherit it.”</p>
+          </blockquote>
+          <figcaption><strong>Claire &amp; Hugo B.</strong> — The Saône dining table</figcaption>
+        </figure>
+        <div class="quotes">
+          <figure class="quote reveal">
+            <blockquote><p>“Thomas turned an impossible alcove into the most useful wall in our apartment. Precise, patient and a pleasure to work with.”</p></blockquote>
+            <figcaption><strong>Malik R.</strong> — Library wall</figcaption>
+          </figure>
+          <figure class="quote reveal">
+            <blockquote><p>“Delivered on the exact day promised, installed in two hours, not a scratch on the walls. The craftsmanship is extraordinary.”</p></blockquote>
+            <figcaption><strong>Sandrine P.</strong> — Silk mill kitchen</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ QUOTE FORM ============ -->
+    <section class="section section-quote" id="quote" aria-labelledby="quote-title">
+      <div class="container quote-grid">
+        <div class="quote-intro reveal">
+          <h2 id="quote-title">Let's make something <em>together.</em></h2>
+          <p>Tell us about your project. We reply within two working days with first ideas and an estimate. No commitment.</p>
+          <!-- À PERSONNALISER : coordonnées -->
+          <dl class="contact-list">
+            <div><dt>Workshop</dt><dd>18 Rue des Tanneurs, 69004 Lyon<br>Visits by appointment</dd></div>
+            <div><dt>Email</dt><dd><a href="mailto:hello@atelierlumiere-demo.com">hello@atelierlumiere-demo.com</a></dd></div>
+            <div><dt>Phone</dt><dd><a href="tel:+33400000000">+33 4 00 00 00 00</a></dd></div>
+          </dl>
+        </div>
+
+        <!--
+          FORMULAIRE — front-end uniquement.
+          Formspree : action="https://formspree.io/f/VOTRE_ID" method="POST"
+          Netlify Forms : name="quote" data-netlify="true"
+        -->
+        <form class="quote-form reveal" id="quote-form" novalidate>
+          <div class="field">
+            <label for="q-name">Name</label>
+            <input type="text" id="q-name" name="name" autocomplete="name" required aria-describedby="q-name-error">
+            <p class="field-error" id="q-name-error"></p>
+          </div>
+          <div class="field">
+            <label for="q-email">Email</label>
+            <input type="email" id="q-email" name="email" autocomplete="email" required aria-describedby="q-email-error">
+            <p class="field-error" id="q-email-error"></p>
+          </div>
+          <div class="field">
+            <label for="q-phone">Phone <span class="optional">(optional)</span></label>
+            <input type="tel" id="q-phone" name="phone" autocomplete="tel">
+          </div>
+          <div class="field">
+            <label for="q-type">Type of project</label>
+            <select id="q-type" name="type" required aria-describedby="q-type-error">
+              <option value="">Select…</option>
+              <option>Table or desk</option>
+              <option>Chairs or seating</option>
+              <option>Shelving or storage</option>
+              <option>Kitchen</option>
+              <option>Something else</option>
+            </select>
+            <p class="field-error" id="q-type-error"></p>
+          </div>
+          <fieldset class="field field-full budget">
+            <legend>Estimated budget</legend>
+            <div class="pills">
+              <label class="pill"><input type="radio" name="budget" value="Under €2,000"><span>Under €2,000</span></label>
+              <label class="pill"><input type="radio" name="budget" value="€2,000–5,000" checked><span>€2,000–5,000</span></label>
+              <label class="pill"><input type="radio" name="budget" value="€5,000–10,000"><span>€5,000–10,000</span></label>
+              <label class="pill"><input type="radio" name="budget" value="€10,000+"><span>€10,000+</span></label>
+            </div>
+          </fieldset>
+          <div class="field field-full">
+            <label for="q-message">Your project</label>
+            <textarea id="q-message" name="message" rows="5" required aria-describedby="q-message-error" placeholder="Dimensions, wood you like, where it will live, ideal timing…"></textarea>
+            <p class="field-error" id="q-message-error"></p>
+          </div>
+          <button type="submit" class="btn btn-accent btn-block">Send my request <span aria-hidden="true">→</span></button>
+          <p class="form-success" role="status" aria-live="polite" hidden></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-giant" aria-hidden="true">Atelier <em>Lumière</em></p>
+      <div class="footer-row">
+        <p>© <span class="year">2026</span> Atelier Lumière · Bespoke furniture, Lyon</p>
+        <!-- À PERSONNALISER : réseaux sociaux -->
+        <p><a href="#">Instagram</a> · <a href="#">Pinterest</a> · <a href="#top">Back to top ↑</a></p>
+        <p>Website by <a href="../index.html">Lucas Guidet</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ LIGHTBOX ============ -->
+  <dialog class="lightbox" id="lightbox" aria-labelledby="lb-title">
+    <div class="lb-inner">
+      <button class="lb-close" type="button" aria-label="Close">×</button>
+      <div class="lb-art" id="lb-art"></div>
+      <div class="lb-text">
+        <p class="lb-meta" id="lb-meta"></p>
+        <h2 class="lb-title" id="lb-title"></h2>
+        <p class="lb-desc" id="lb-desc"></p>
+        <div class="lb-nav">
+          <button type="button" class="lb-prev" aria-label="Previous project">← Prev</button>
+          <span class="lb-count" id="lb-count"></span>
+          <button type="button" class="lb-next" aria-label="Next project">Next →</button>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- À PERSONNALISER : nom du restaurant, ville, description -->
+  <title>Chez Marcel — French bistro in Bordeaux · Book a table</title>
+  <meta name="description" content="Chez Marcel is a family-run French bistro in the heart of Bordeaux. Seasonal market cooking, natural wines and a warm welcome since 1987. Book your table online.">
+  <meta name="theme-color" content="#5A1726">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Chez Marcel — French bistro in Bordeaux">
+  <meta property="og:description" content="Seasonal market cooking, natural wines and a warm welcome since 1987. Book your table online.">
+  <meta property="og:url" content="https://lucasguidet.netlify.app/demo-restaurant/">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='50' fill='%235A1726'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='%23C9A45C' font-family='Georgia' font-style='italic'>M</text></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Bandeau démo — à supprimer pour un vrai client -->
+  <div class="demo-banner">
+    <p>Demo website — fictional business. <a href="../index.html">← Back to portfolio</a></p>
+  </div>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="logo" aria-label="Chez Marcel — back to top">
+        <span class="logo-small">Bistro</span>
+        <span class="logo-name">Chez Marcel</span>
+      </a>
+      <button class="burger" aria-expanded="false" aria-controls="main-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#about">Our story</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#hours">Hours</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#location">Find us</a></li>
+          <li><a href="#booking" class="btn btn-gold">Book a table</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <!-- PHOTO : remplacer le fond dégradé .hero par une photo de salle ou de plat (Unsplash : "french bistro interior") -->
+    <section class="hero">
+      <div class="hero-pattern" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <p class="hero-est reveal">Est. 1987 · Bordeaux</p>
+        <h1 class="reveal">Honest French cooking,<br><em>served with heart.</em></h1>
+        <svg class="ornament reveal" viewBox="0 0 200 20" aria-hidden="true"><path d="M0 10h80M120 10h80" stroke="currentColor" stroke-width="1"/><path d="M100 2l6 8-6 8-6-8z" fill="currentColor"/><circle cx="86" cy="10" r="2" fill="currentColor"/><circle cx="114" cy="10" r="2" fill="currentColor"/></svg>
+        <p class="hero-sub reveal">A family bistro where the menu follows the market, the wine list follows the seasons, and every guest is treated like a regular.</p>
+        <div class="hero-ctas reveal">
+          <a href="#booking" class="btn btn-gold">Book a table</a>
+          <a href="#menu" class="btn btn-outline">See the menu</a>
+        </div>
+      </div>
+      <a href="#about" class="scroll-hint" aria-label="Scroll to our story"><span aria-hidden="true"></span></a>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <!-- PHOTO : remplacer l'illustration SVG par une photo du chef ou de la salle -->
+        <div class="about-visual reveal" aria-hidden="true">
+          <div class="frame">
+            <svg viewBox="0 0 300 340" class="about-svg">
+              <defs>
+                <linearGradient id="wine" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8A2A3D"/><stop offset="1" stop-color="#4A111E"/></linearGradient>
+              </defs>
+              <rect width="300" height="340" fill="#EFE4D2"/>
+              <circle cx="150" cy="150" r="100" fill="#F6EFE3" stroke="#C9A45C" stroke-width="2"/>
+              <circle cx="150" cy="150" r="78" fill="none" stroke="#E3D5BF" stroke-width="1.5"/>
+              <!-- assiette -->
+              <ellipse cx="150" cy="150" rx="40" ry="30" fill="#6B1E2E" opacity=".85"/>
+              <path d="M125 140 q25 -22 50 0" stroke="#C9A45C" stroke-width="3" fill="none" stroke-linecap="round"/>
+              <circle cx="140" cy="158" r="5" fill="#9DB36B"/><circle cx="160" cy="160" r="4" fill="#9DB36B"/>
+              <!-- verre -->
+              <path d="M240 210 h34 q0 38 -17 44 q-17 -6 -17 -44z" fill="url(#wine)" stroke="#5A1726" stroke-width="1.5"/>
+              <path d="M257 254 v40 M244 296 h26" stroke="#5A1726" stroke-width="2" fill="none" stroke-linecap="round"/>
+              <!-- couverts -->
+              <path d="M38 90 v120 M30 90 v30 q8 10 16 0 v-30" stroke="#5A1726" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+              <path d="M262 80 q14 30 0 60 v70" stroke="#5A1726" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+              <text x="150" y="315" text-anchor="middle" font-family="Georgia" font-style="italic" font-size="18" fill="#6B1E2E">Bon appétit</text>
+            </svg>
+          </div>
+          <div class="stamp"><span>Since</span><strong>1987</strong></div>
+        </div>
+        <div class="about-copy reveal">
+          <p class="kicker">Our story</p>
+          <h2 id="about-title">Three generations, one kitchen.</h2>
+          <p class="lead">Marcel opened the doors in 1987 with twelve tables, a blackboard and a simple promise: cook what the market brings in that morning, and cook it properly.</p>
+          <p>Today his granddaughter Camille runs the kitchen, but the spirit hasn't changed. Our bread comes from the bakery across the street, our vegetables from three farms within 40 km, and our wine list is a love letter to small producers from Bordeaux and beyond.</p>
+          <ul class="facts">
+            <li><strong>40 km</strong><span>max. from farm to plate</span></li>
+            <li><strong>120+</strong><span>wines by small producers</span></li>
+            <li><strong>36</strong><span>seats, plus a summer terrace</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TODAY'S SPECIAL + MENU ============ -->
+    <section class="section menu-section" id="menu" aria-labelledby="menu-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="kicker">À la carte</p>
+          <h2 id="menu-title">The menu</h2>
+          <p>Our menu changes with the seasons. Ask your server about allergens — we're always happy to adapt a dish.</p>
+        </div>
+
+        <!-- À PERSONNALISER : plat du jour -->
+        <article class="special reveal" aria-labelledby="special-title">
+          <div class="special-label">
+            <span>Today's special</span>
+            <span class="special-day" id="special-day">Chalkboard</span>
+          </div>
+          <div class="special-body">
+            <h3 id="special-title">Slow-braised beef cheek, red wine &amp; shallot jus</h3>
+            <p>Seven hours in a Bordeaux red, with buttery potato purée and glazed heritage carrots. Only 14 portions a day — when it's gone, it's gone.</p>
+          </div>
+          <p class="special-price">€24</p>
+        </article>
+
+        <!-- À PERSONNALISER : contenu de la carte -->
+        <div class="menu-card reveal">
+          <div class="tabs" role="tablist" aria-label="Menu categories">
+            <button class="tab" role="tab" id="tab-starters" aria-controls="panel-starters" aria-selected="true">Starters</button>
+            <button class="tab" role="tab" id="tab-mains" aria-controls="panel-mains" aria-selected="false" tabindex="-1">Mains</button>
+            <button class="tab" role="tab" id="tab-desserts" aria-controls="panel-desserts" aria-selected="false" tabindex="-1">Desserts</button>
+            <span class="tab-indicator" aria-hidden="true"></span>
+          </div>
+
+          <div class="tab-panel is-active" role="tabpanel" id="panel-starters" aria-labelledby="tab-starters" tabindex="0">
+            <ul class="dishes">
+              <li class="dish"><div><h4>French onion soup</h4><p>Caramelised onions, beef broth, Comté crouton</p></div><span class="price">€11</span></li>
+              <li class="dish"><div><h4>Burgundy snails <span class="tag-v">Signature</span></h4><p>Six escargots, garlic &amp; parsley butter, toasted sourdough</p></div><span class="price">€13</span></li>
+              <li class="dish"><div><h4>Duck rillettes</h4><p>House-made, with cornichons and grilled country bread</p></div><span class="price">€10</span></li>
+              <li class="dish"><div><h4>Goat's cheese &amp; beetroot salad <span class="tag-v">V</span></h4><p>Roasted beetroot, honey, walnuts, mixed leaves</p></div><span class="price">€12</span></li>
+              <li class="dish"><div><h4>Oysters from Arcachon</h4><p>Six or twelve, with shallot vinegar and lemon</p></div><span class="price">€15 / €28</span></li>
+            </ul>
+          </div>
+
+          <div class="tab-panel" role="tabpanel" id="panel-mains" aria-labelledby="tab-mains" tabindex="0" hidden>
+            <ul class="dishes">
+              <li class="dish"><div><h4>Duck confit <span class="tag-v">Signature</span></h4><p>Crispy leg, sarladaise potatoes, green salad</p></div><span class="price">€23</span></li>
+              <li class="dish"><div><h4>Steak frites</h4><p>Grass-fed entrecôte, hand-cut fries, Béarnaise sauce</p></div><span class="price">€27</span></li>
+              <li class="dish"><div><h4>Sea bream fillet</h4><p>Beurre blanc, fennel, seasonal greens</p></div><span class="price">€25</span></li>
+              <li class="dish"><div><h4>Coq au vin</h4><p>Free-range chicken, mushrooms, smoked bacon, red wine</p></div><span class="price">€22</span></li>
+              <li class="dish"><div><h4>Wild mushroom risotto <span class="tag-v">V</span></h4><p>Ceps, parmesan, truffle oil, chives</p></div><span class="price">€19</span></li>
+            </ul>
+          </div>
+
+          <div class="tab-panel" role="tabpanel" id="panel-desserts" aria-labelledby="tab-desserts" tabindex="0" hidden>
+            <ul class="dishes">
+              <li class="dish"><div><h4>Crème brûlée</h4><p>Madagascar vanilla, crackling caramel top</p></div><span class="price">€8</span></li>
+              <li class="dish"><div><h4>Tarte Tatin <span class="tag-v">Signature</span></h4><p>Caramelised apples, crème fraîche from Isigny</p></div><span class="price">€9</span></li>
+              <li class="dish"><div><h4>Chocolate mousse</h4><p>Dark chocolate 70%, fleur de sel, served to share</p></div><span class="price">€8</span></li>
+              <li class="dish"><div><h4>Cannelés de Bordeaux</h4><p>Three warm cannelés, rum and vanilla</p></div><span class="price">€7</span></li>
+              <li class="dish"><div><h4>Cheese board</h4><p>Three French cheeses from our affineur, fig jam</p></div><span class="price">€12</span></li>
+            </ul>
+          </div>
+
+          <p class="menu-note">Lunch set menu (Tue–Fri): starter + main or main + dessert — <strong>€21</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HOURS ============ -->
+    <section class="section hours" id="hours" aria-labelledby="hours-title">
+      <div class="container hours-grid">
+        <div class="reveal">
+          <p class="kicker">Opening hours</p>
+          <h2 id="hours-title">Come hungry, leave happy.</h2>
+          <p>Kitchen closes 30 minutes before the restaurant. Walk-ins are welcome when tables are free, but we always recommend booking, especially on weekends.</p>
+          <p class="open-now" id="open-now" aria-live="polite"></p>
+        </div>
+        <!-- À PERSONNALISER : horaires (et dans script.js : objet OPENING_HOURS) -->
+        <table class="hours-table reveal">
+          <caption class="sr-only">Weekly opening hours</caption>
+          <tbody>
+            <tr data-day="1"><th scope="row">Monday</th><td>Closed</td></tr>
+            <tr data-day="2"><th scope="row">Tuesday</th><td>12:00–14:30 · 19:00–22:30</td></tr>
+            <tr data-day="3"><th scope="row">Wednesday</th><td>12:00–14:30 · 19:00–22:30</td></tr>
+            <tr data-day="4"><th scope="row">Thursday</th><td>12:00–14:30 · 19:00–22:30</td></tr>
+            <tr data-day="5"><th scope="row">Friday</th><td>12:00–14:30 · 19:00–23:00</td></tr>
+            <tr data-day="6"><th scope="row">Saturday</th><td>12:00–15:00 · 19:00–23:00</td></tr>
+            <tr data-day="0"><th scope="row">Sunday</th><td>12:00–15:30</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ============ REVIEWS ============ -->
+    <section class="section reviews" id="reviews" aria-labelledby="reviews-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="kicker">Kind words</p>
+          <h2 id="reviews-title">What our guests say</h2>
+          <p class="rating"><span class="stars" aria-hidden="true">★★★★★</span> <strong>4.8 / 5</strong> from 620+ reviews</p>
+        </div>
+        <!-- À PERSONNALISER : avis clients réels (Google, TripAdvisor…) -->
+        <div class="reviews-grid">
+          <figure class="review reveal">
+            <span class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</span>
+            <blockquote><p>“The best duck confit I've had outside my grandmother's kitchen. Warm service, fair prices, and Camille came out to say hello. We'll be back.”</p></blockquote>
+            <figcaption><strong>Sophie L.</strong> · Google review</figcaption>
+          </figure>
+          <figure class="review reveal">
+            <span class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</span>
+            <blockquote><p>“A real neighbourhood bistro, not a tourist trap. The sommelier found us a gorgeous little Côtes de Bourg for under €30. Book ahead on Saturdays!”</p></blockquote>
+            <figcaption><strong>James &amp; Priya</strong> · TripAdvisor</figcaption>
+          </figure>
+          <figure class="review reveal">
+            <span class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</span>
+            <blockquote><p>“We celebrated my father's 70th here. They prepared a private corner, a cake, and treated us like family. Thank you for a perfect evening.”</p></blockquote>
+            <figcaption><strong>Antoine M.</strong> · Google review</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BOOKING ============ -->
+    <section class="section booking" id="booking" aria-labelledby="booking-title">
+      <div class="container booking-grid">
+        <div class="booking-copy reveal">
+          <p class="kicker">Reservations</p>
+          <h2 id="booking-title">Book your table</h2>
+          <p>Reserve online in under a minute. We'll confirm by email within a few hours. For groups of more than 8, please call us.</p>
+          <!-- À PERSONNALISER : téléphone -->
+          <a href="tel:+33500000000" class="phone-link"><span aria-hidden="true">☎</span> +33 5 00 00 00 00</a>
+        </div>
+
+        <!--
+          FORMULAIRE — front-end uniquement.
+          Formspree : action="https://formspree.io/f/VOTRE_ID" method="POST" (voir script.js)
+          Netlify Forms : name="reservation" data-netlify="true"
+        -->
+        <form class="booking-form reveal" id="booking-form" novalidate>
+          <div class="field">
+            <label for="r-date">Date</label>
+            <input type="date" id="r-date" name="date" required aria-describedby="r-date-error">
+            <p class="field-error" id="r-date-error"></p>
+          </div>
+          <div class="field">
+            <label for="r-time">Time</label>
+            <select id="r-time" name="time" required aria-describedby="r-time-error">
+              <option value="">Choose a time</option>
+              <optgroup label="Lunch">
+                <option>12:00</option><option>12:30</option><option>13:00</option><option>13:30</option>
+              </optgroup>
+              <optgroup label="Dinner">
+                <option>19:00</option><option>19:30</option><option>20:00</option><option>20:30</option><option>21:00</option><option>21:30</option>
+              </optgroup>
+            </select>
+            <p class="field-error" id="r-time-error"></p>
+          </div>
+          <div class="field">
+            <label for="r-guests">Guests</label>
+            <select id="r-guests" name="guests" required>
+              <option value="1">1 guest</option>
+              <option value="2" selected>2 guests</option>
+              <option value="3">3 guests</option>
+              <option value="4">4 guests</option>
+              <option value="5">5 guests</option>
+              <option value="6">6 guests</option>
+              <option value="7">7 guests</option>
+              <option value="8">8 guests</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="r-name">Full name</label>
+            <input type="text" id="r-name" name="name" autocomplete="name" required aria-describedby="r-name-error">
+            <p class="field-error" id="r-name-error"></p>
+          </div>
+          <div class="field">
+            <label for="r-email">Email</label>
+            <input type="email" id="r-email" name="email" autocomplete="email" required aria-describedby="r-email-error">
+            <p class="field-error" id="r-email-error"></p>
+          </div>
+          <div class="field">
+            <label for="r-phone">Phone</label>
+            <input type="tel" id="r-phone" name="phone" autocomplete="tel" required aria-describedby="r-phone-error">
+            <p class="field-error" id="r-phone-error"></p>
+          </div>
+          <div class="field field-full">
+            <label for="r-notes">Special requests <span class="optional">(optional)</span></label>
+            <textarea id="r-notes" name="notes" rows="3" placeholder="Allergies, birthday, high chair, terrace…"></textarea>
+          </div>
+          <button type="submit" class="btn btn-wine btn-block">Request my table</button>
+          <p class="form-success" role="status" aria-live="polite" hidden></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ============ LOCATION ============ -->
+    <section class="section location" id="location" aria-labelledby="location-title">
+      <div class="container location-grid">
+        <div class="location-copy reveal">
+          <p class="kicker">Find us</p>
+          <h2 id="location-title">In the heart of Saint-Pierre</h2>
+          <!-- À PERSONNALISER : adresse -->
+          <address>
+            12 Rue des Lilas<br>
+            33000 Bordeaux, France
+          </address>
+          <ul class="access">
+            <li><strong>Tram:</strong> Line C, “Place de la Bourse” — 4 min walk</li>
+            <li><strong>Parking:</strong> Parking Bourse–Jouannet, 300 m</li>
+            <li><strong>Accessibility:</strong> step-free entrance and accessible restroom</li>
+          </ul>
+          <!-- À PERSONNALISER : lien Google Maps -->
+          <a class="btn btn-outline-wine" href="https://maps.google.com/?q=Bordeaux" target="_blank" rel="noopener">Get directions ↗</a>
+        </div>
+
+        <!-- Carte stylisée en CSS (option : remplacer par un <iframe> Google Maps) -->
+        <div class="map reveal" role="img" aria-label="Stylised map showing Chez Marcel near Place de la Bourse, by the river Garonne">
+          <div class="map-river"></div>
+          <div class="map-street s1"></div><div class="map-street s2"></div><div class="map-street s3"></div><div class="map-street s4"></div>
+          <div class="map-block b1"></div><div class="map-block b2"></div><div class="map-block b3"></div><div class="map-block b4"></div>
+          <span class="map-label l1">Place de la Bourse</span>
+          <span class="map-label l2">Garonne</span>
+          <div class="map-pin">
+            <svg viewBox="0 0 40 52"><path d="M20 0C9 0 0 9 0 20c0 15 20 32 20 32s20-17 20-32C40 9 31 0 20 0z" fill="#6B1E2E"/><circle cx="20" cy="20" r="8" fill="#C9A45C"/></svg>
+            <span>Chez Marcel</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-logo">Chez Marcel</p>
+        <p>French bistro · Bordeaux · Since 1987</p>
+      </div>
+      <div>
+        <p><a href="tel:+33500000000">+33 5 00 00 00 00</a><br><a href="mailto:hello@chezmarcel-demo.com">hello@chezmarcel-demo.com</a></p>
+      </div>
+      <!-- À PERSONNALISER : réseaux sociaux -->
+      <ul class="social" aria-label="Social media">
+        <li><a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></a></li>
+        <li><a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-2.8 0-4 1.8-4 4.3V10H7v4h3v7h4v-7h3l1-4h-4V8.5c0-.3.2-.5.5-.5z" fill="currentColor"/></svg></a></li>
+      </ul>
+      <p class="footer-legal">© <span class="year">2026</span> Chez Marcel. All rights reserved. · Please drink responsibly. · Website by <a href="../index.html">Lucas Guidet</a></p>
+    </div>
+  </footer>
+
+  <!-- Bouton d'appel flottant (mobile) -->
+  <a href="tel:+33500000000" class="call-fab" aria-label="Call Chez Marcel">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor"/></svg>
+    <span>Call us</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
